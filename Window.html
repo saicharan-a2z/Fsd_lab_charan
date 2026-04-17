@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Window Object Example</title>
+
+<style>
+
+body {
+
+font-family: Arial, sans-serif; 
+
+margin: 20px;
+
+color: deeppink
+
+}
+
+button {
+
+padding: 10px 20px; 
+
+margin: 10px; 
+
+cursor: pointer;
+
+font-size: 16px;
+
+}
+
+button:hover {
+
+background-color: #45a049; /* Darker background color when the button is hovered */
+
+}
+
+#info {margin-top: 20px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Explore the Window Object in JavaScript</h1>
+
+<button onclick="showWindowSize()">Show Window Size</button>
+
+<button onclick="showAlert()">Show Alert</button>
+
+<button onclick="changeLocation()">Change URL</button>
+
+<button onclick="openNewWindow()">Open New Window</button>
+
+<button onclick="closeCurrentWindow()">Close Current Window</button>
+
+<div id="info"></div>
+
+<script>
+
+// Show the window size (inner width and height) 
+
+function showWindowSize() {
+
+const width = window.innerWidth; 
+
+const height = window.innerHeight;
+
+document.getElementById('info').innerHTML = `
+
+<p><strong>Window Size:</strong></p>
+
+<p>Width: ${width}px</p>
+
+<p>Height: ${height}px</p>
+
+`;
+
+}
+
+// Show an alert box 
+
+function showAlert() {
+
+window.alert("This is an alert message from the window object!");
+
+}
+
+// Change the location (URL) of the browser 
+
+function changeLocation() {
+
+window.location.href = "https://www.example.com"; // Redirect to a new URL
+
+}function openNewWindow() {
+
+window.open("https://www.example.com", "_blank", "width=600,height=400"); 
+
+document.getElementById('info').innerHTML = "<p>A new window has been opened!</p>";
+
+}
+
+// Close the current window (this will only work if opened via JavaScript) 
+
+function closeCurrentWindow() {
+
+if (window.confirm("Are you sure you want to close this window?")) { 
+
+window.close();
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
+SOURCE CODE: (Friend1.html)
+
+<html>
+
+<head>
+
+<title>friend1</title>
+
+</head>
+
+<body>
+
+<h1>Friend 1</h1>
+
+<ul>
+
+<li>Name: Jhon</li>
+
+<li>Age: 20</li>
+
+<li>Address: vijayawada</li>
+
+<ul>
+
+</body>
+
+</html>SOURCE CODE: (Friend2.html)
+
+<html>
+
+<head>
+
+<title>friend1</title>
+
+</head>
+
+<body>
+
+<h1>Friend 2</h1>
+
+<ul>
+
+<li>Name: Riya</li>
+
+<li>Age: 20</li>
+
+<li>Address: vizag</li>
+
+<ul>
+
+</body>
+
+</html>
+
+SOURCE CODE: (ImagePage.html)
+
+<html>
+
+<head>
+
+<title>images</title>
+
+</head>
+
+<body>
+
+<h1>Images</h1>
+
+<a href="Friend1.html"> <img 
+
+src="https://images.inc.com/uploaded_files/image/1920x1080/getty_481292845_77896.jpg" alter="Jhon" 
+
+width="100" height="100"></a>
+
+<a href="Friend2.html"> <img 
+
+src="https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_1_1200x1200/public/field_blog_entry
+
+_images/2018-09/shutterstock_648907024.jpg?itok=1-9sfjwH" alter="riya" width="100" 
+
+height="100"></a>
+
+</body>
+
+</html>
+
+OUTPUT:
