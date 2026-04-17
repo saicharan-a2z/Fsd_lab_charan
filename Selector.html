@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Simple CSS Selectors</title>
+<style>
+/* Element Selector */
+p {
+color: blue;
+}
+35
+/* ID Selector */
+#header {
+color: green;
+font-size: 24px;
+}
+/* Class Selector */
+.highlight {
+background-color: yellow;
+font-weight: bold;
+}
+/* Group Selector */
+h1, h2, h3 {
+color: red;
+}
+/* Universal Selector */
+* {
+font-family: Arial, sans-serif;
+}
+</style>
+</head>
+<body>
+<h1>This is a red heading (Group Selector)</h1>
+<h2>This is another red heading (Group Selector)</h2>
+<h3>This is yet another red heading (Group Selector)</h3>
+<p>This paragraph will be blue (Element Selector).</p>
+<p class="highlight">This paragraph has a yellow background (Class Selector).</p>
+<div id="header">This is a green heading with ID selector.</div>
+<p class="highlight">This paragraph also has a yellow background (Class Selector).</p>
+<p>All elements in the document use Arial font (Universal Selector).</p>
+</body>
+</html>
+OUTPUT:
